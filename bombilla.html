@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Encender y apagar</title>
+        <style>
+        body {
+            font-family: cuorier, monospace;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        button {
+            padding: 10px 30px;
+            margin: 10px;
+            background-color: #007acc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: #000000;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 120px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        </style>
+    </head>
+<body>
+<h1>What Can JavaScript Do?</h1>
+<p>Ejercicio de javascript y HTML.</p>
+<p>Usamos el javascrpt en los botones.</p>
+<img id="myImage" src="bombilla apagada.jpg" style="width:100px">
+<button onclick="document.getElementById('myImage').src='bombilla encendida.jpg'">Turn on the light</button>
+<button onclick="document.getElementById('myImage').src='bombilla apagada.jpg'">Turn off the light</button>
+
+</body>
+</html>
